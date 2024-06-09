@@ -1,0 +1,6 @@
+Duplicates found
+The following files are identical
+	Hello.doc
+	Assignment9_2 - Copy.py
+	Assignment9_2.py
+	Assignment9_3 - Copy.py
