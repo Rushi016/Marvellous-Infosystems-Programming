@@ -1,0 +1,21 @@
+<h1> Marvellous Infosystems </h1>
+
+<div>
+<label for="username" [class]="'Buttons'">Username : </label>
+<input [(ngModel)] = "username" type="text">
+</div>
+
+<br>
+
+<div>
+<label for="password" [class]="'Buttons'">Password : </label>
+<input [(ngModel)] = "password" type="text">
+</div>
+
+<br>
+
+<div><button (click) = "LoginEvent()" [class]="'Login'">Login</button></div>
+<br>
+<div><h1 [class]="'Message'"> {{login}} </h1></div>
+
+<router-outlet></router-outlet>
