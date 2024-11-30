@@ -1,0 +1,49 @@
+<h2>
+  3. Create angular application which creates one custom pipe named as MarvellousChk. 
+  This custom pipe accept one integer as a value and parameter can be Prime, Perfect, Even, Odd. 
+  Depends on the parameter we have to check status of the number and return the result accordingly.
+</h2>
+
+<p>
+  <label class="Style1">Enter a number : </label>
+  <input
+    type="number"
+    class="Style2"
+    [(ngModel)]="No"
+    placeholder=""
+  />
+</p>
+
+<label class="Style1">Select a type of number to check : </label>
+<p>
+<label>
+  <input type="radio" [(ngModel)]="NumState" name="NumState" value="Prime" />
+  <span class="Style4">Prime</span>
+</label>
+</p>
+
+<p>
+<label>
+  <input type="radio" [(ngModel)]="NumState" name="NumState" value="Perfect" />
+  <span class="Style4">Perfect</span> 
+</label>
+</p>
+
+<p>
+<label>
+  <input type="radio" class="Style2" [(ngModel)]="NumState" name="NumState" value="Even" />
+  <span class="Style4">Even</span>
+</label>
+</p>
+
+<p>
+<label>
+  <input type="radio" class="Style2" [(ngModel)]="NumState" name="NumState" value="Odd" />
+  <span class="Style4">Odd</span>
+</label>
+</p>
+
+<p class="Style5">
+  {{No | marvellousChk:NumState}}
+</p>
+

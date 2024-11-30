@@ -1,0 +1,18 @@
+<form>
+    <h2>{{InstituteName}}</h2>
+    <fieldset>
+        <legend><strong>{{LoginPage}}</strong></legend>
+        <p>
+            <label for="UserName" class="New"><strong>Username : </strong></label>
+            <input type="email" id="UserName" [(ngModel)]="UserName"/>
+        </p>
+        <p>
+            <label for="Password" class="New"><strong>Password : </strong></label>
+            <input type="password" id="Password" name="password"/>
+        </p>
+        <p>
+            <button (click)="LoginEvent()" class="Old">Submit</button>
+        </p>
+            <p class="Gold">{{Message}}</p>
+    </fieldset>
+</form>

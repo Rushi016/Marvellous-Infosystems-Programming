@@ -1,0 +1,45 @@
+<h2>
+  2. Create angular application which creates two custom pipe named as MyAdd & MyMult. 
+  MyAdd pipe is used to add two numbers and MyMult is used to multiply two numbers.
+</h2>
+
+<h3>
+  <p>
+    <label class="Style3">Enter Fisrt Number : </label>
+    <input
+      type="number"
+      class="Style1"
+      [(ngModel)]="No1"
+      placeholder=""
+    />
+  </p>
+</h3>
+
+
+<p>
+  <label class="Style3">Enter Second Number : </label>
+  <input
+    type="number"
+    class="Style1"
+    [(ngModel)]="No2"
+    placeholder=""
+  />
+</p>
+
+<p>
+  <span class="Style3">
+    Addition :
+  </span>
+  <span class="Style2">
+    {{No1 | myAdd : No2}}
+  </span>
+</p>
+
+<p>
+  <span class="Style3">
+    Multiplication :
+  </span>
+  <span class="Style2">
+    {{No1 | myMult : No2}}
+  </span>
+</p>

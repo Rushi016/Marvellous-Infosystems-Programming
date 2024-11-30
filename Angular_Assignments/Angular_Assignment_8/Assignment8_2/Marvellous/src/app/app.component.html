@@ -1,0 +1,11 @@
+<h1>Communication Between Parent and Child</h1>
+<h2>Inside Parent Component</h2>
+
+<input type="text" [(ngModel)]="ParentMessage" placeholder="Enter Your Message"/>
+<button (click)="SendToChild()"><strong>Send Message To Child</strong></button>
+
+<app-child [ParentData]="child" 
+           (Myevent)="ChildMessage = $event"></app-child>
+<h2 class="Style2">Message From Child : {{ChildMessage}}</h2>
+
+<router-outlet></router-outlet>

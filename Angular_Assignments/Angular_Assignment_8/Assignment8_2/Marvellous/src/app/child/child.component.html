@@ -1,0 +1,10 @@
+<h2>Inside Child Component</h2>
+<div>
+    <input type="text" [(ngModel)]="Message" placeholder="Enter Your Message : "/>
+    <button (click)="SendToParent()"><strong>Send Message To Parent</strong></button>
+</div>
+
+<div>
+    
+    <h2 class="Style1">{{"Message From Parent : " +ParentData}}</h2>
+</div>

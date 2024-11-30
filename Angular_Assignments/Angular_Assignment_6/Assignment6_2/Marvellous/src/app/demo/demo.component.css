@@ -1,0 +1,17 @@
+.New{
+    font-size: medium;
+    font-family: 'Times New Roman';
+    color: blue;
+}
+
+.Old{
+    font-size: medium;
+    font-family: 'Times New Roman';
+    color: red;
+}
+
+.Gold{
+    font-size: medium;
+    font-family: cursive;
+    color: green;
+}

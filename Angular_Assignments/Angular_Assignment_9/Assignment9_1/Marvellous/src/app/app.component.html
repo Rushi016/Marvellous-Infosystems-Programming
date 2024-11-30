@@ -1,0 +1,16 @@
+<h2>
+  1. Create angular application which creates one custom pipe named as MyRev. 
+  This custom pipe accept string as a value and display the string reverse format.
+</h2>
+
+<input
+  type="text"
+  style="font-size: large; color: blue; font-weight: bold; font-family: sans-serif;"
+  [(ngModel)]="Name"
+  placeholder="Enter a string"
+/>
+<h2>Reverse String : 
+  <span style="font-size: large; color: red; font-weight: bold; font-family: sans-serif;">
+    {{Name | myRev}}
+  </span>
+</h2>

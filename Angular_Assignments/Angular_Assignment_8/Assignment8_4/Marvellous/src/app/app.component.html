@@ -1,0 +1,10 @@
+<h1>String Length Application using Event listeners on text box (Without using ngModel directive)</h1>
+
+<input
+type="text"
+class="Style1"
+(input)="updateMessage($event)"
+placeholder="Enter a String"
+/>
+
+<p class="Style2">Length of the string: <h2>{{ Message.length }}</h2>
